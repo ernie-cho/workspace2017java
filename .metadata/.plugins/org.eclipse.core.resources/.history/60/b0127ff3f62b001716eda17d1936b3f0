@@ -1,0 +1,73 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class batch {
+
+	public static void main(String[] args) {
+		ResultSet  rs      = null;
+        String sQuery = "";
+
+		
+		try{
+			// Register JDBC driver
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// Open a connection
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.159.128:1521:orasparta", "scott", "dudeh123");
+			// Execute a query to create statment with
+			Statement stmt = conn.createStatement();
+			
+			rs = stmt.executeQuery(sQuery);
+			
+			while(rs.next()) {
+                String  id  = rs.getString("ENAME");
+                String  nm  = rs.getString("JOB");
+                System.out.println(id + " " + nm);
+            }
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			stmt.close();
+			conn.close();
+			System.out.println("Finish");
+			
+			
+		}//try
+		catch(Exception e) {
+			  e.printStackTrace();
+		}//catch(Exception e)
+		
+		
+	}//public static void main(String[] args)
+
+}//public class batch 

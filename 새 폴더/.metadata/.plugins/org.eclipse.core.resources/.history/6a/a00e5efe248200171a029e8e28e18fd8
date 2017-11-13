@@ -1,0 +1,32 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class array_2577 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int A=0, B=0, C=0;
+		int result = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		A = scan.nextInt();
+		B = scan.nextInt();
+		C = scan.nextInt();
+		result = A*B*C;
+		
+		String strResult = String.valueOf(result);
+		System.out.println(result);
+		System.out.println("gg"+strResult);
+		//int[] arrayResult = {};
+		int rere=0;
+		//for(int i = 0; i < strResult.length(); i++){
+			rere=  Integer.parseInt(strResult.substring(0, 1));
+			//arrayResult[i] =  Integer.parseInt(strResult.substring(i, 1));
+		//}
+		//System.out.println("ee"+arrayResult[0]);
+		System.out.println("ee"+rere);
+	}
+
+}

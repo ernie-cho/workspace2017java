@@ -1,0 +1,17 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ZipcodeXMLSchema"
+ xmlns:tns="http://www.example.org/ZipcodeXMLSchema" elementFormDefault="qualified">
+</schema>
+    <Data>
+   	<ZIPCODE>ZIPCODE</ZIPCODE>
+   	<SIDO>SIDO</SIDO>
+	<GUGUN>GUGUN</GUGUN>
+	<DONG>DONG</DONG>
+   	<RI>RI</RI>
+   	<BUNJI>BUNJI</BUNJI>
+   	<SEQ>SEQ</SEQ>     
+    </Data>
+  
+  
+  
+   -->

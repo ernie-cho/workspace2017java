@@ -1,0 +1,7 @@
+
+      <!ELEMENT zip_code (#PCDATA)> <!--특수 기호때문에 문자로 명시-->
+	  <!ELEMENT si_do (#PCDATA)>
+      <!ELEMENT gu_gun (#PCDATA)>
+      <!ELEMENT do_ng (#PCDATA)>
+      <!ELEMENT r_i (#PCDATA)>
+      <!ELEMENT bun_ji (#PCDATA)>

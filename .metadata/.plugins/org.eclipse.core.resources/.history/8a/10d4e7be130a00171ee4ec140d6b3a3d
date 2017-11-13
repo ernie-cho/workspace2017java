@@ -1,0 +1,71 @@
+
+public class works170316 
+{
+	//3월 16일 개인과제 String에 관한 Method 정리하기
+	public static void main(String[] args) 
+	{
+			
+		
+//1.startsWith : 문자열이 지정한 문자로 시작하는지 판단 같으면 true반환 아니면 false를 반환한다.(대소문자구별)
+		String str = "apple";
+		String str2 = "banana";
+		boolean startsWith = str.startsWith("a");
+		System.out.println("startsWith: " +"str is: "+ startsWith);
+		boolean startsWith1 = str2.startsWith("b");
+		
+		System.out.println("startsWith: " +"str2 is: "+ startsWith1);
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	} //public static void main
+} //public class works170316 

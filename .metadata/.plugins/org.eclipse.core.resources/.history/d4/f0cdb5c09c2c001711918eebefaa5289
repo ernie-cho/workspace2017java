@@ -1,0 +1,63 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class batch {
+
+	public static void main(String[] args) {
+		ResultSet  rs = null;
+		int insert = 0;
+		double bonus = 0;
+		String sqlstr = null;
+		
+		try{
+			// Register JDBC driver
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// Open a connection
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.159.128:1521:orasparta", "scott", "dudeh123");
+			// Execute a query to create statment with
+			Statement stmt = conn.createStatement();
+			// Query for check table
+			rs = stmt.executeQuery("SELECT * FROM EMP_LARGE");
+			// Start time 
+			long startTime = System. currentTimeMillis (); 
+			// Start While clause
+			while(rs.next()) {
+				long    empno = rs.getLong("EMPNO");
+                String  ename  = rs.getString("ENAME");
+                String  job  = rs.getString("JOB");
+                int     mgr  = rs.getInt("MGR");
+                String  hiredate = rs.getString("HIREDATE");
+                int     sal = rs.getInt("SAL");
+                int    comm = rs.getInt("COMM");
+                int  deptno = rs.getInt("DEPTNO");                
+                // Data check
+                //System.out.println(empno + " " + ename + " " + job  + " " + mgr + " " + hiredate + " " + sal+ " " + comm+ " " + deptno);                    
+             // Bonus calculate
+                if(rs.getString("JOB").equals("PRESIDENT"))
+                	bonus = 0;
+                else 
+                	bonus = sal * 0.3;
+             // Insert data to BONUS_LARGE table  
+                sqlstr =" INSERT INTO BONUS_LARGE( " +
+                		" YYYYMM,EMPNO,JOB,DEPTNO,SAL,BONUS ) " +
+                		" VALUES ( " + 
+                		" " + "TO_CHAR(SYSDATE, 'YYYYMM')" + ", '" + empno + "', '"+ job + "', '"+ deptno + "', '"+ sal + "', '"+ bonus + "' )"; 
+                Statement stmt2 = conn.createStatement();
+                insert = stmt2.executeUpdate(sqlstr);
+				stmt2.close();
+            }// while(rs.next())
+			 // End time 
+			 long endTime = System. currentTimeMillis ();  
+			 stmt.close();
+			 conn.close();
+			 // Check Finish Time
+			 System.out.println("Finish");
+			 System.out.println("TimeCheck: " + (endTime - startTime) +"ms");			
+		}//try
+		catch(Exception e) {
+			  e.printStackTrace();
+		}//catch(Exception e)	
+	}//public static void main(String[] args)
+}//public class batch 

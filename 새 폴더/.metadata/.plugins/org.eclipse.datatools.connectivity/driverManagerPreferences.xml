@@ -1,0 +1,4 @@
+#DriverManager.Preferences
+#Mon May 01 09:16:20 KST 2017
+oracle.eclipse.tools.database.12.driverTemplate=true
+oracle.eclipse.tools.database.11.driverTemplate=true

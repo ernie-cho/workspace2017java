@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;k20_170530_db.k20_170603_01_stock_Insert&apos; to &apos;k20_170603_02_stock_Insert&apos;&#x0D;&#x0A;- Original project: &apos;k20_170530_db&apos;&#x0D;&#x0A;- Original element: &apos;k20_170530_db.k20_170603_01_stock_Insert&apos;&#x0D;&#x0A;- Renamed element: &apos;k20_170530_db.k20_170603_02_stock_Insert&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;k20_170603_01_stock_Insert&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;k20_170530_db{k20_170603_01_stock_Insert.java[k20_170603_01_stock_Insert" matchStrategy="1" name="k20_170603_02_stock_Insert" qualified="false" references="true" similarDeclarations="false" stamp="1496494452507" textual="false" version="1.0"/>
+</session>

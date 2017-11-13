@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;Calc_Bonus_by_Callstmt_7&apos;&#x0D;&#x0A;- Original project: &apos;Calc_Bonus_by_Callstmt_7&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     조영도_Calc_Bonus_by_Callstmt_7.java&#x0D;&#x0A;     조영도_Calc_Bonus_by_Callstmt_8.java" description="Delete elements" element1="/src&lt;{조영도_Calc_Bonus_by_Callstmt_8.java" element2="/src&lt;{조영도_Calc_Bonus_by_Callstmt_7.java" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1496279056528" subPackages="false" version="1.0"/>
+</session>
